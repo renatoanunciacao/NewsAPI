@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./images/images.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="./js/jquery-tiny-pubsub.js"></script>
+    <link rel="stylesheet" href="./css//style.css">
+    <title>Noticias</title>
+</head>
+<body>
+        <header>
+                <div class="collapse bg-dark" id="navbarHeader">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Sobre</h4>
+                        <p class="text-muted">Veja as notícias mais atuais.</p>
+                      </div>
+                      <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contato</h4>
+                        <ul class="list-unstyled">
+                          <li><a href="#" class="text-white">Me siga no Twitter</a></li>
+                          <li><a href="#" class="text-white">Curta no Facebook</a></li>
+                          <li><a href="#" class="text-white">Me envie um e-mail</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="navbar navbar-dark bg-dark shadow-sm">
+                  <div class="container d-flex justify-content-between">
+                    <a href="#" class="navbar-brand d-flex align-items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                      <strong>News</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                </div>
+              </header>
+    <div class="container"> 
+        <div class="row d-none">
+                <div class="col-lg-4 col-md-12 mb-4">
+                  <label for="country">Pais</label>
+                  <select class="custom-select d-block w-100" id="country" required>
+                            <option value="br">Escolha</option>
+                            <option value="ae">Emirados Árabes Unidos</option>
+                            <option value="ar">Argentina</option>
+                            <option value="at">Austria</option>
+                            <option value="au">Australia</option>
+                            <option value="be">Bélgica</option>
+                            <option value="bg">Bulgária</option>
+                            <option value="br">Brasil</option>
+                            <option value="ca">Canada</option>
+                            <option value="ch">Suiça</option>
+                            <option value="cn">China</option>
+                            <option value="co">Colômbia</option>
+                            <option value="cu">Cuba</option>
+                            <option value="cz">República Tcheca	</option>
+                            <option value="de">Alemanha</option>
+                            <option value="eg">Egito</option>
+                            <option value="fr">França</option>
+                            <option value="gb">Reino Unido	</option>
+                            <option value="gr">Grécia</option>
+                            <option value="hk">Hong-Kong</option>
+                            <option value="hu">Hungria</option>
+                            <option value="id">Indonésia</option>
+                            <option value="il">Israel	</option>
+                            <option value="in">India</option>
+                            <option value="it">Itália</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="TO">Tocantins</option>
+                  </select>
+                </div>
+        </div>
+    </div>
+        <div class="album py-5 bg-light">
+          <div class="container">
+             <div id="posts" class="row">
+
+             </div>
+           </div>
+        </div>
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+              <p class="text-muted text-center">Todos os direitos reservados. </p>
+            </div>
+          </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment-with-locales.min.js"></script>
+
+    <script type="text/javascript">
+    $('.navbar-toggler').click(function(){
+        $('.collapse').toggleClass('show');
+    })
+
+    </script>
+</body>
+</html>
